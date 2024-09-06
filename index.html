@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie Guide App</title>
+    <!-- Google Font -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <div class="search-container">
+            <input
+              type="text"
+              placeholder="Enter movie name here..."
+              id="movie-name"
+              value=""
+            />
+            <button id="search-btn">Search</button>
+        </div>
+        <div id="result"></div>
+        <button id="get-recommendations-btn" class="glass">Get Recommendations</button>
+        <button id="view-favorites-btn" class="glass">Watch Favorites</button>
+        <!-- Create a button element with an ID "back-button" -->
+        <button id="back-button">Back to Homepage</button>
+        <ul id="recommendations-list"></ul>
+    </div>
+    <div id="news" class="side-panel">
+        <h2>Movie News</h2>
+        <div id="news-container"></div>
+    </div>
+    <div id="top-rated" class="side-panel">
+        <h2>Top Rated Movies</h2>
+        <ul id="top-rated-list"></ul>
+    </div>
+    <script src="key.js"></script>
+    <script src="script.js"></script>
+    <!-- Watch Favorites Section -->
+<div id="watch-favorites" class="container" style="display: none;">
+    <h2>Favorites</h2>
+    <ul id="favorites-list"></ul>
+    <button id="back-to-home" class="glass">Back to Homepage</button>
+</div>
+
+</body>
+</html>
